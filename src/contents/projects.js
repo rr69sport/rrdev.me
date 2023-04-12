@@ -2,7 +2,7 @@ export const personalProjects = [
   {
     title: 'Heads or Tails',
     description: 'Se ingresan dos opciones y elige una al azar.',
-    screenshot: 'https://raw.githubusercontent.com/rr69sport/heads-or-tails/main/heads-or-tails.png',
+    screenshot: 'screenshots/heads-or-tails.png',
     built: ['HTML', 'CSS', 'JS'],
     links: [
       {
@@ -18,7 +18,7 @@ export const personalProjects = [
   {
     title: 'Link Saver',
     description: 'Aplicación para guardar links en localstorage.',
-    screenshot: 'https://raw.githubusercontent.com/rr69sport/link-saver/main/link-saver.png',
+    screenshot: 'screenshots/link-saver.png',
     built: ['HTML', 'CSS', 'JS', 'LocalStorage'],
     links: [
       {
@@ -34,7 +34,7 @@ export const personalProjects = [
   {
     title: 'Movie Finder',
     description: 'Buscador de películas con un sencillo login y contraseña en localstorage.',
-    screenshot: 'https://raw.githubusercontent.com/rr69sport/movie-finder/master/movie-finder.png',
+    screenshot: 'screenshots/movie-finder.png',
     built: ['HTML', 'CSS', 'JS', 'LocalStorage'],
     links: [
       {
@@ -52,7 +52,7 @@ export const personalProjects = [
 export const frontendmentorProjects = [
   {
     title: 'Social media dashboard',
-    screenshot: 'https://raw.githubusercontent.com/frontendmentor-challenge-repos/social-media-dashboard-with-theme-switcher/master/dashboard.png',
+    screenshot: 'screenshots/dashboard.png',
     links: [
       {
         text: 'GitHub',
@@ -66,7 +66,7 @@ export const frontendmentorProjects = [
   },
   {
     title: 'FAQ accordion card',
-    screenshot: 'https://raw.githubusercontent.com/frontendmentor-challenge-repos/faq-accordion/main/faq.png',
+    screenshot: 'screenshots/faq.png',
     links: [
       {
         text: 'GitHub',
