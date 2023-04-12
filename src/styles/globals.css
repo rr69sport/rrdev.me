@@ -1,0 +1,46 @@
+:root {
+  --main-color: #fe8401;
+  --light-color: #d4e4f7;
+  --dark-color: #111418;
+  --alt-dark-color: #13171b;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--dark-color);
+}
+
+body {
+  margin: 0 auto;
+  max-width: 990px;
+  font-family: sans-serif;
+  color: var(--light-color);
+  background-color: var(--alt-dark-color);
+  font-size: clamp(.5rem, 1vw + .75rem, 1rem);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+h1 {
+  font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+}
+
+h2 {
+  font-size: clamp(1rem, 1vw + 1.15rem, 2rem);
+}

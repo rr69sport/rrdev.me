@@ -1,0 +1,31 @@
+---
+import ExternalLink from '../icons/ExternalLink.astro'
+
+const {links} = Astro.props
+---
+
+<p>
+  { links.map(link => <a href={link.url}>{link.text} <ExternalLink /></a>) }
+</p>
+
+<style>
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: .35em .55em;
+    color: var(--light-colot);
+    font-weight: 700;
+    opacity: .65;
+    background-color: #aaa2;
+    border-radius: 3px;
+  }
+  a:hover {
+    color: var(--main-color);
+  }
+</style>

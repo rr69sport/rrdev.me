@@ -1,15 +1,21 @@
 ---
+import Footer from "../layout/Footer.astro";
+import Header from "../layout/Header.astro"
+import Main from "../layout/Main.astro";
+import "../styles/globals.css"
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Richard Ramírez</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Header />
+		<Main />
+		<Footer />
 	</body>
 </html>

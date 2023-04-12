@@ -1,0 +1,52 @@
+---
+import SocialMedia from '../components/SocialMedia.astro'
+
+const response = await fetch('https://api.github.com/users/rr69sport')
+const profile = await response.json()
+---
+<header>
+  <div class="container">
+    <div class="image">
+      <img class="avatar" src={profile.avatar_url} alt={`Foto de perfil en GitHub de ${profile.name}`}>
+    </div>
+    <div class="texts">
+      <h1>{profile.name}</h1>
+      <h2>Desarrollador frontend</h2>
+      <p>Con experiencia en {profile.bio}</p>
+    </div>
+  </div>
+  <SocialMedia />
+</header>
+
+<style>
+  header {
+    padding: 2em 1em;
+    border-bottom: 1px solid #aaa2;
+  }
+  h1 {
+    margin-top: 0;
+    color: var(--main-color);
+  }
+  .avatar {
+    width: 35%;
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2em;
+    border-radius: 50%;
+  }
+  @media screen and (min-width: 650px) {
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      padding: 2em 0;
+    }
+    .avatar {
+      width: 100%;
+      margin-right: initial;
+      margin-left: initial;
+      margin-bottom: initial;
+    }
+  }
+</style>

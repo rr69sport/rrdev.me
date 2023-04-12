@@ -1,0 +1,42 @@
+---
+import ExternalLink from "../icons/ExternalLink.astro";
+
+---
+
+<ul>
+  <li>
+    <a href="https://www.linkedin.com/in/rrdevme/" target="_blank">
+      LinkedIn
+      <ExternalLink />
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/rr69sport" target="_blank">
+      GitHub
+      <ExternalLink />
+    </a>
+  </li>
+</ul>
+
+<style>
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+  }
+  a {
+    display: flex;
+    align-items: flex-end;
+    padding: .35em .55em;
+    font-weight: 700;
+    font-size: 110%;
+    color: inherit;
+    text-decoration: underline;
+    background-color: #aaa2;
+    border-radius: 3px;
+  }
+  a:hover {
+    color: var(--main-color);
+  }
+</style>

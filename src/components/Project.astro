@@ -1,0 +1,35 @@
+---
+import Links from './Links.astro'
+import Techs from './Techs.astro'
+import Screenshot from './Screenshot.astro'
+import Description from './Description.astro'
+const { project } = Astro.props
+---
+
+<article>
+  <div>
+    <Screenshot screenshot={project.screenshot} altText={`Captura de pantalla del proyecto ${project.title}`} />
+  </div>
+  <div class="info">
+    <h4>{project.title}</h4>
+    <Description text={project.description} />
+    <Techs built={project.built} />
+    <Links links={project.links} />
+  </div>
+</article>
+
+<style>
+  article {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    background-color: var(--alt-dark-color);
+  }
+  h4 {
+    margin-top: 1em;
+    color: var(--main-color);
+    font-size: 1.25em;
+  }
+  .info {
+    padding: 0 1em;
+  }
+</style>

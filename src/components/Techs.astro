@@ -1,0 +1,23 @@
+---
+const { built } = Astro.props
+---
+
+{ built ? <p>{built.map(tech => <span>{tech}</span>)}</p> : '' }
+
+<style>
+  p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 65%;
+  }
+  span {
+    border-radius: 3px;
+    opacity: .70;
+    padding: .35em .5em;
+    display: inline-block;
+    background-color: #ccc2;
+  }
+</style>
