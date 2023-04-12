@@ -1,4 +1,4 @@
 # Portfolio dev
+![Screenshot](https://github.com/rr69sport/rrdev.me/blob/main/public/screenshots/rrdev.me.png)
 
-<https://tabler-icons.io/>
-<https://astro.build/>
+**Hecho con:** <https://astro.build/> y <https://tabler-icons.io/>
