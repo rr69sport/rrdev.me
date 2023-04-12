@@ -1,32 +1,48 @@
 ---
-import Footer from "../layout/Footer.astro";
+import {SEO} from "astro-seo"
+import Footer from "../layout/Footer.astro"
 import Header from "../layout/Header.astro"
-import Main from "../layout/Main.astro";
+import Main from "../layout/Main.astro"
 import "../styles/globals.css"
 ---
 
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="author" content="Richard Ramírez" />
-  	<meta name="description" content="Portfolio personal">
-
-  	<meta property="og:title" content="Richard Ramírez" />
-  	<meta property="og:type" content="website" />
-  	<meta property="og:url" content="https://www.rrdev.me" />
-  	<meta property="og:description" content="Portfolio personal" />
-		<meta property="og:image" content="screenshot/rrdev.me.png" />
-		
-  	<meta name="twitter:title" content="Richard Ramírez" />
-  	<meta name="twitter:description" content="Portfolio personal" />
-  	<meta name="twitter:url" content="https://www.rrdev.me" />
-		<meta name="twitter:image" content="screenshot/rrdev.me.png">
-		<meta name="twitter:image:alt" content="Screenshot de la página">
-		
+		<title>Richard Ramírez</title>
 		<meta name="generator" content={Astro.generator} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Richard Ramírez</title>
+		<SEO 
+			openGraph={{
+				basic: {
+					title: "Richard Ramírez",
+					type: "website",
+					url: "https://www.rrdev.me",
+					image: "screenshot/rrdev.me.png"
+				}
+			}}
+			twitter={{
+        creator: "@rr69sport"
+      }}
+			extend={{
+				link: [{ rel: "icon", href: "/favicon.svg" }],
+				meta: [
+					{
+						name: "twitter:image",
+						content: "screenshot/rrdev.me.png"
+					},
+					{
+						name: "twitter:title",
+						content: "Richard Ramírez"
+					},
+					{
+						name: "twitter:description",
+						content: "Portfolio personal con información sobre mi y proyectos prácticos."
+					}
+				]
+			}}
+		/>
 	</head>
 	<body>
 		<Header />
