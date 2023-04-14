@@ -28,22 +28,26 @@ const profile = await response.json()
     color: var(--main-color);
   }
   .avatar {
-    width: 35%;
-    max-width: 250px;
+    width: 75%;
+    max-width: 300px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 2em;
     border-radius: 3px;
   }
   @media screen and (min-width: 650px) {
+    header {
+      padding-top: 0;
+    }
     .container {
       display: flex;
       align-items: center;
       gap: 2em;
-      padding: 2em 0;
+      padding: 1em 0 0;
     }
     .avatar {
       width: 100%;
+      max-width: 550px;
       margin-right: initial;
       margin-left: initial;
       margin-bottom: initial;
