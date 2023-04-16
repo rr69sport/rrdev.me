@@ -1,37 +1,5 @@
 export const personalProjects = [
   {
-    title: 'FlexBox Navs',
-    description: 'Dsitribución de elementos de menú con flexbox y margin.',
-    screenshot: 'screenshots/flexbox-navs.png',
-    built: ['HTML', 'CSS'],
-    links: [
-      {
-        text: 'GitHub',
-        url: 'https://github.com/rr69sport/flexbox-navs'
-      },
-      {
-        text: 'Demo',
-        url: 'https://rr69sport.github.io/flexbox-navs/'
-      }
-    ]
-  },
-  {
-    title: 'Columnas con y sin FlexBox o Grid',
-    description: 'Ejemplo de grilla en columnas de 3 maneras diferentes.',
-    screenshot: 'screenshots/column-grid.png',
-    built: ['HTML', 'CSS'],
-    links: [
-      {
-        text: 'GitHub',
-        url: 'https://github.com/rr69sport/column-layout-without-flexbox-and-grid'
-      },
-      {
-        text: 'Demo',
-        url: 'https://rr69sport.github.io/column-layout-without-flexbox-and-grid/'
-      }
-    ]
-  },
-  {
     title: 'Heads or Tails',
     description: 'Se ingresan dos opciones y elige una al azar.',
     screenshot: 'screenshots/heads-or-tails.png',
