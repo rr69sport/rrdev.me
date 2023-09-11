@@ -6,51 +6,64 @@ const profile = await response.json()
 ---
 <header>
   <div class="container">
-    <div class="image">
+    <div>
       <img class="avatar" src={profile.avatar_url} alt={`Foto de perfil en GitHub de ${profile.name}`}>
     </div>
     <div class="texts">
       <h1>{profile.name}</h1>
       <h2>Desarrollador frontend</h2>
-      <p>Con experiencia en {profile.bio}</p>
+      <p class="bio">{profile.bio}</p>
+      <SocialMedia />
     </div>
   </div>
-  <SocialMedia />
 </header>
 
 <style>
   header {
-    padding: 2em 1em;
-    border-bottom: 1px solid #aaa2;
+    padding: var(--gap);
+    border-bottom: var(--bordered) var(--border-color);
   }
   h1 {
     margin-top: 0;
+    line-height: 1;
     color: var(--main-color);
   }
   .avatar {
-    width: 75%;
+    padding: 2px;
+    width: 100%;
     max-width: 300px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 2em;
-    border-radius: 3px;
+    margin-bottom: calc(var(--gap) * 2);
+    border-radius: var(--border-radius);
   }
-  @media screen and (min-width: 650px) {
+
+  .texts {
+    position: relative;
+    padding: var(--gap);
+    border-radius: var(--border-radius);
+    border: var(--bordered) var(--border-color);
+    background-color: var(--dark-color);
+  }
+
+  .bio {
+    opacity: var(--opacity);
+  }
+
+  @media screen and (min-width: 850px) {
     header {
       padding-top: 0;
     }
     .container {
       display: flex;
-      align-items: center;
-      gap: 2em;
-      padding: 1em 0 0;
+      align-items: stretch;
+      gap: var(--gap);
+      padding: var(--gap) 0 0;
     }
     .avatar {
       width: 100%;
       max-width: 550px;
-      margin-right: initial;
-      margin-left: initial;
-      margin-bottom: initial;
+      margin: 0;
     }
   }
 </style>

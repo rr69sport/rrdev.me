@@ -23,18 +23,18 @@ const { project } = Astro.props
     display: grid;
     grid-template-rows: min-content 1fr;
     background-color: var(--alt-dark-color);
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     overflow: hidden;
-    border: 1px solid #aaa1;
+    border: var(--bordered) var(--border-color);
   }
   h4 {
-    margin-top: 1em;
+    margin-top: var(--gap);
     color: var(--main-color);
     font-size: 1.25em;
   }
   .info {
     display: grid;
     grid-template-rows: min-content 1fr min-content min-content;
-    padding: 0 1em;
+    padding: 0 var(--gap);
   }
 </style>

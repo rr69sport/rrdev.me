@@ -6,17 +6,17 @@ const { built } = Astro.props
 
 <style>
   ul {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: calc(var(--gap) * 2);
+    margin-bottom: calc(var(--gap) * 2);
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     font-size: 65%;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
   }
   li {
-    border-radius: 3px;
-    opacity: .70;
+    border-radius: var(--border-radius);
+    opacity: var(--opacity);
     padding: .35em .5em;
     display: inline-block;
     background-color: var(--dark-color);

@@ -11,7 +11,7 @@ const {links} = Astro.props
 <style>
   p {
     display: flex;
-    gap: 1em;
+    gap: var(--gap)
   }
   a {
     display: flex;
@@ -19,9 +19,9 @@ const {links} = Astro.props
     padding: .35em .55em;
     color: var(--light-colot);
     font-weight: 700;
-    opacity: .65;
-    background-color: #aaa2;
-    border-radius: 3px;
+    opacity: var(--opacity);
+    background-color: var(--dark-color-ligthen);
+    border-radius: var(--border-radius);
   }
   a:hover {
     color: var(--main-color);

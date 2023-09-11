@@ -23,20 +23,28 @@ import ExternalLink from "../icons/ExternalLink.astro";
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 1em;
+    gap: var(--gap);
   }
   a {
     display: flex;
     align-items: flex-end;
-    padding: .35em .55em;
+    padding: .5em .75em;
     font-weight: 700;
     font-size: 110%;
     color: inherit;
     text-decoration: underline;
-    background-color: #aaa2;
-    border-radius: 3px;
+    background-color: var(--dark-color-ligthen);
+    border-radius: var(--border-radius);
   }
   a:hover {
     color: var(--main-color);
+  }
+
+  @media screen and (min-width: 850px) {
+    ul {
+      position: absolute;
+      bottom: var(--gap);
+      right: var(--gap);
+    }
   }
 </style>
