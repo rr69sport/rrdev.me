@@ -2,12 +2,22 @@
 const { built } = Astro.props
 ---
 
-{ built ? <ul>{built.map(tech => <li>{tech}</li>)}</ul> : '' }
+{
+  built ? (
+    <ul>
+      {built.map((tech) => (
+        <li>{tech}</li>
+      ))}
+    </ul>
+  ) : (
+    ''
+  )
+}
 
 <style>
   ul {
-    margin-top: calc(var(--gap) * 2);
-    margin-bottom: calc(var(--gap) * 2);
+    /* margin-top: calc(var(--gap) * 2); */
+    /* margin-bottom: calc(var(--gap) * 2); */
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
@@ -17,7 +27,7 @@ const { built } = Astro.props
   li {
     border-radius: var(--border-radius);
     opacity: var(--opacity);
-    padding: .35em .5em;
+    padding: 0.35em 0.5em;
     display: inline-block;
     background-color: var(--dark-color);
   }

@@ -8,9 +8,12 @@ const { project } = Astro.props
 
 <article>
   <div>
-    <Screenshot screenshot={project.screenshot} altText={`Captura de pantalla del proyecto ${project.title}`} />
+    <Screenshot
+      screenshot={project.screenshot}
+      altText={`Captura de pantalla del proyecto ${project.title}`}
+    />
   </div>
-  <div class="info">
+  <div class='info'>
     <h4>{project.title}</h4>
     <Description text={project.description} />
     <Techs built={project.built} />
@@ -28,7 +31,7 @@ const { project } = Astro.props
     border: var(--bordered) var(--border-color);
   }
   h4 {
-    margin-top: var(--gap);
+    margin: var(--gap) 0 0;
     color: var(--main-color);
     font-size: 1.25em;
   }
