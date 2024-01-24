@@ -22,7 +22,7 @@ const { built }: Props = Astro.props
   ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: var(--gap);
     font-size: 65%;
     border-radius: var(--border-radius);
   }
@@ -31,6 +31,6 @@ const { built }: Props = Astro.props
     opacity: var(--opacity);
     padding: 0.35em 0.5em;
     display: inline-block;
-    background-color: var(--dark-color);
+    background-color: var(--background-color);
   }
 </style>

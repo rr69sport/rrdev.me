@@ -13,7 +13,7 @@ const { links } = Astro.props
   {
     links.map((link) => (
       <a href={link.url} rel='noopener' target='_blank'>
-        {link.text} <ExternalLinkIcon />
+        {link.text} <ExternalLinkIcon width='20' height='20' />
       </a>
     ))
   }
@@ -27,11 +27,11 @@ const { links } = Astro.props
   a {
     display: flex;
     align-items: flex-end;
-    padding: 0.35em 0.55em;
-    color: var(--light-colot);
-    font-weight: 700;
+    padding: calc(var(--gap) / 2) var(--gap);
+    color: var(--foreground-color);
+    font-weight: var(--font-bold);
     opacity: var(--opacity);
-    background-color: var(--dark-color-ligthen);
+    background-color: var(--background-color);
     border-radius: var(--border-radius);
   }
   a:hover {

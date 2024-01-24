@@ -9,13 +9,13 @@ import ExternalLinkIcon from '../icons/ExternalLinkIcon.astro'
       target='_blank'
       rel='noopener'>
       LinkedIn
-      <ExternalLinkIcon />
+      <ExternalLinkIcon width='32' height='32' />
     </a>
   </li>
   <li>
     <a href='https://github.com/rr69sport' target='_blank' rel='noopener'>
       GitHub
-      <ExternalLinkIcon />
+      <ExternalLinkIcon width='32' height='32' />
     </a>
   </li>
 </ul>
@@ -29,13 +29,13 @@ import ExternalLinkIcon from '../icons/ExternalLinkIcon.astro'
   }
   a {
     display: flex;
-    align-items: flex-end;
-    padding: 0.5em 0.75em;
-    font-weight: 700;
-    font-size: 110%;
+    align-items: center;
+    padding: calc(var(--gap) / 2) var(--gap);
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-lg);
     color: inherit;
     text-decoration: underline;
-    background-color: var(--dark-color-ligthen);
+    background-color: var(--background-color);
     border-radius: var(--border-radius);
   }
   a:hover {
