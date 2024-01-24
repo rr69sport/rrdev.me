@@ -1,11 +1,18 @@
 ---
 import Project from '../components/Project.astro'
-const { title, projects } = Astro.props
+import type { ProjectType } from '../types'
+
+interface Props {
+  title: string
+  projects: ProjectType[]
+}
+
+const { title, projects }: Props = Astro.props
 ---
 
 <section>
   <h3>{title}</h3>
-  { projects.map(project => <Project project={project}/>) }
+  {projects.map((project) => <Project project={project} />)}
 </section>
 
 <style>
@@ -13,11 +20,7 @@ const { title, projects } = Astro.props
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--gap);
-    margin-bottom: calc(var(--gap) * 2);
     padding: 0 var(--gap) var(--gap);
-    border-radius: var(--border-radius);
-    border: var(--bordered) var(--border-color);
-    background-color: var(--dark-color);
   }
 
   h3 {

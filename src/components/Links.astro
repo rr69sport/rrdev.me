@@ -1,22 +1,33 @@
 ---
-import ExternalLink from '../icons/ExternalLink.astro'
+import ExternalLinkIcon from '../icons/ExternalLinkIcon.astro'
+import type { LinkType } from '../types'
 
-const {links} = Astro.props
+interface Props {
+  links: LinkType[]
+}
+
+const { links } = Astro.props
 ---
 
 <p>
-  { links.map(link => <a href={link.url}>{link.text} <ExternalLink /></a>) }
+  {
+    links.map((link) => (
+      <a href={link.url} rel='noopener' target='_blank'>
+        {link.text} <ExternalLinkIcon />
+      </a>
+    ))
+  }
 </p>
 
 <style>
   p {
     display: flex;
-    gap: var(--gap)
+    gap: var(--gap);
   }
   a {
     display: flex;
     align-items: flex-end;
-    padding: .35em .55em;
+    padding: 0.35em 0.55em;
     color: var(--light-colot);
     font-weight: 700;
     opacity: var(--opacity);

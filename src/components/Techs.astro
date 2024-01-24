@@ -1,5 +1,9 @@
 ---
-const { built } = Astro.props
+interface Props {
+  built: string[]
+}
+
+const { built }: Props = Astro.props
 ---
 
 {
@@ -16,8 +20,6 @@ const { built } = Astro.props
 
 <style>
   ul {
-    /* margin-top: calc(var(--gap) * 2); */
-    /* margin-bottom: calc(var(--gap) * 2); */
     display: flex;
     flex-wrap: wrap;
     gap: 1em;

@@ -2,7 +2,7 @@ export const personalProjects = [
   {
     title: 'Heads or Tails',
     description: 'Se ingresan dos opciones y elige una al azar.',
-    screenshot: 'screenshots/heads-or-tails.png',
+    screenshot: '/images/screenshots/heads-or-tails.webp',
     built: ['HTML', 'CSS', 'JS'],
     links: [
       {
@@ -18,7 +18,7 @@ export const personalProjects = [
   {
     title: 'Link Saver',
     description: 'Aplicación para guardar links en localstorage.',
-    screenshot: 'screenshots/link-saver.png',
+    screenshot: '/images/screenshots/link-saver.webp',
     built: ['HTML', 'CSS', 'JS', 'LocalStorage'],
     links: [
       {
@@ -32,49 +32,34 @@ export const personalProjects = [
     ]
   },
   {
-    title: 'Fetching de Datos',
-    description: 'Sencillo fetching de datos con React.',
-    screenshot: 'screenshots/react-data-fetching.png',
-    built: ['React'],
-    links: [
-      {
-        text: 'GitHub',
-        url: 'https://github.com/rr69sport/react-fetch-data'
-      },
-      {
-        text: 'Demo',
-        url: 'https://react-fetch-data-beige.vercel.app/'
-      }
-    ]
-  }
-]
-
-export const frontendmentorProjects = [
-  {
     title: 'Social media dashboard',
-    screenshot: 'screenshots/dashboard.png',
+    description: 'Práctica de Frontendmentor',
+    screenshot: '/images/screenshots/dashboard.webp',
+    built: ['HTML', 'CSS', 'JS', 'Frontendmentor'],
     links: [
       {
         text: 'GitHub',
-        url: 'https://github.com/frontendmentor-challenge-repos/social-media-dashboard-with-theme-switcher'
+        url: 'https://github.com/rr69sport/social-media-dashboard-with-theme-switcher'
       },
       {
         text: 'Demo',
-        url: 'https://frontendmentor-challenge-repos.github.io/social-media-dashboard-with-theme-switcher/'
+        url: 'https://rr69sport.github.io/social-media-dashboard-with-theme-switcher/'
       }
     ]
   },
   {
     title: 'FAQ accordion card',
-    screenshot: 'screenshots/faq.png',
+    description: 'Práctica de Frontendmentor',
+    screenshot: '/images/screenshots/faq.webp',
+    built: ['HTML', 'CSS', 'JS', 'Frontendmentor'],
     links: [
       {
         text: 'GitHub',
-        url: 'https://github.com/frontendmentor-challenge-repos/faq-accordion'
+        url: 'https://github.com/rr69sport/faq-accordion'
       },
       {
         text: 'Demo',
-        url: 'https://frontendmentor-challenge-repos.github.io/faq-accordion/'
+        url: 'https://rr69sport.github.io/faq-accordion/'
       }
     ]
   }

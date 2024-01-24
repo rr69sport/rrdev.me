@@ -2,8 +2,13 @@
 import Links from './Links.astro'
 import Techs from './Techs.astro'
 import Screenshot from './Screenshot.astro'
-import Description from './Description.astro'
-const { project } = Astro.props
+import type { ProjectType } from '../types'
+
+interface Props {
+  project: ProjectType
+}
+
+const { project }: Props = Astro.props
 ---
 
 <article>
@@ -15,7 +20,7 @@ const { project } = Astro.props
   </div>
   <div class='info'>
     <h4>{project.title}</h4>
-    <Description text={project.description} />
+    <p>{project.description}</p>
     <Techs built={project.built} />
     <Links links={project.links} />
   </div>
@@ -35,6 +40,12 @@ const { project } = Astro.props
     color: var(--main-color);
     font-size: 1.25em;
   }
+
+  p {
+    font-size: var(--font-size-small);
+    opacity: var(--opacity);
+  }
+
   .info {
     display: grid;
     grid-template-rows: min-content 1fr min-content min-content;

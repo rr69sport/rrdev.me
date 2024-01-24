@@ -1,19 +1,21 @@
 ---
-import ExternalLink from "../icons/ExternalLink.astro";
-
+import ExternalLinkIcon from '../icons/ExternalLinkIcon.astro'
 ---
 
 <ul>
   <li>
-    <a href="https://www.linkedin.com/in/rrdevme/" target="_blank">
+    <a
+      href='https://www.linkedin.com/in/rrdevme/'
+      target='_blank'
+      rel='noopener'>
       LinkedIn
-      <ExternalLink />
+      <ExternalLinkIcon />
     </a>
   </li>
   <li>
-    <a href="https://github.com/rr69sport" target="_blank">
+    <a href='https://github.com/rr69sport' target='_blank' rel='noopener'>
       GitHub
-      <ExternalLink />
+      <ExternalLinkIcon />
     </a>
   </li>
 </ul>
@@ -28,7 +30,7 @@ import ExternalLink from "../icons/ExternalLink.astro";
   a {
     display: flex;
     align-items: flex-end;
-    padding: .5em .75em;
+    padding: 0.5em 0.75em;
     font-weight: 700;
     font-size: 110%;
     color: inherit;

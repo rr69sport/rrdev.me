@@ -1,18 +1,14 @@
 ---
 import Projects from './Projects.astro'
-import { personalProjects, frontendmentorProjects } from '../contents/projects.js'
+import { personalProjects } from '../contents/projects.js'
 ---
 
 <main>
   <h2>Algunos de mis proyectos prácticos</h2>
   <Projects title='Proyectos Personales' projects={personalProjects} />
-  <Projects title='Prácticas de Frontendmentor' projects={frontendmentorProjects} />
 </main>
 
 <style>
-  main {
-    padding: var(--gap);
-  }
   h2 {
     text-align: center;
   }

@@ -1,40 +1,54 @@
 ---
-import Footer from "../layout/Footer.astro"
-import Header from "../layout/Header.astro"
-import Main from "../layout/Main.astro"
-import "../styles/globals.css"
+import Footer from '../layout/Footer.astro'
+import Header from '../layout/Header.astro'
+import Main from '../layout/Main.astro'
+import '../styles/globals.css'
 ---
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<title>Richard Ramírez</title>
-		<meta name="generator" content={Astro.generator} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		
-		<!-- HTML Meta Tags -->
-		<meta name="author" content="Richard Ramírez">
-		<meta name="description" content="Portfolio personal con información sobre mi y proyectos prácticos.">
+<html lang='es'>
+  <head>
+    <meta charset='utf-8' />
+    <title>Richard Ramírez</title>
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
 
-		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://www.rrdev.me/">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Richard Ramírez">
-		<meta property="og:description" content="Portfolio personal con información sobre mi y proyectos prácticos.">
-		<meta property="og:image" content="https://rrdev.me/screenshots/rrdev.me.png">
+    <!-- HTML Meta Tags -->
+    <meta name='author' content='Richard Ramírez' />
+    <meta
+      name='description'
+      content='Portfolio personal con información sobre mi y proyectos prácticos.'
+    />
 
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta property="twitter:domain" content="rrdev.me">
-		<meta property="twitter:url" content="https://www.rrdev.me/">
-		<meta name="twitter:title" content="Richard Ramírez">
-		<meta name="twitter:description" content="Portfolio personal con información sobre mi y proyectos prácticos.">
-		<meta name="twitter:image" content="https://rrdev.me/screenshots/rrdev.me.png">
-	</head>
-	<body>
-		<Header />
-		<Main />
-		<Footer />		
-	</body>
+    <!-- Facebook Meta Tags -->
+    <meta property='og:url' content='https://www.rrdev.me/' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='Richard Ramírez' />
+    <meta
+      property='og:description'
+      content='Portfolio personal con información sobre mi y proyectos prácticos.'
+    />
+    <meta
+      property='og:image'
+      content='https://rrdev.me/screenshots/rrdev.me-screenshot.webp'
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta property='twitter:domain' content='rrdev.me' />
+    <meta property='twitter:url' content='https://www.rrdev.me/' />
+    <meta name='twitter:title' content='Richard Ramírez' />
+    <meta
+      name='twitter:description'
+      content='Portfolio personal con información sobre mi y proyectos prácticos.'
+    />
+    <meta
+      name='twitter:image'
+      content='https://rrdev.me/screenshots/rrdev.me-screenshot.webp'
+    />
+  </head>
+  <body>
+    <Header />
+    <Main />
+    <Footer />
+  </body>
 </html>
